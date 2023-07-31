@@ -1,27 +1,74 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+/* global.css */
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Include the base styles */
+@import 'tailwindcss/base';
+
+/* Include the component styles */
+@import 'tailwindcss/components';
+
+
+/* Include the utility classes */
+@import 'tailwindcss/utilities';
+
+body{
+    background-color: rgb(71 85 105);
+    color: rgb(255, 255, 255);
+    padding: 4%;
+} 
+
+.home-page{
+    display: grid;
+    /* justify-content: center; */
+    align-items: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.header{
+    display: flex;
+    justify-content:space-evenly;
+    margin-bottom: 4%;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.heading{
+    font-size: 40px;
+}
+
+.task{
+    font-size: 25px;
+    padding: 2%;
+  
+}
+
+
+.new{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box{
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    margin-top: 15%;
+    color: black;
+}
+
+.buttons-div{
+    display: flex;
+    flex-direction: row;
+    /* padding: 5%; */
+    justify-content: space-between;
+}
+
+.custom-button{
+    padding: 5%;
+    font-size: 20px;
+}
+
+.new-button{
+    padding-top: 5%;
+    font-size: 20px;
 }
