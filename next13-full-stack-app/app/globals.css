@@ -20,3 +20,17 @@ body {
       )
 }
 
+/* Make the background image cover the full screen */
+.bg-image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Set the height to fill the viewport */
+
+}
+
+.card-bg{
+  backdrop-filter: blur(50px) saturate(100%);
+  background-color: rgba(0,0,0,0.5);
+
+}
