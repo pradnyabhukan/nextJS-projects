@@ -12,25 +12,56 @@ body {
   color: white !important;
 }
 
-body {
-  background: linear-gradient(
+.home-body {
+  /* background: linear-gradient(
       to bottom,
       #27374D,
       #000000
-      )
+      )  */
+      background: linear-gradient(
+        to bottom,
+        #000000,
+        #000000
+        ) 
 }
 
-/* Make the background image cover the full screen */
+.movie-page{
+  background-color: #000000;
+}
+
 .bg-image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100vh; /* Set the height to fill the viewport */
-
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card-bg{
-  backdrop-filter: blur(50px) saturate(100%);
-  background-color: rgba(0,0,0,0.5);
+.blur-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 260px; 
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 1));
+  filter: blur(0px); 
+} 
 
+
+.custom-card{
+  z-index: 1;
+  margin-top: 35%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  align-items: center;
+}
+
+.overflow-content{
+  background-color: black;
 }

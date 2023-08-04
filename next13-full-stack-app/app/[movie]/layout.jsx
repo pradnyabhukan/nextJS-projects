@@ -16,11 +16,8 @@ export const metadata = {
 
 export default function MovieLayout({ children }) {
   return (
-    <html lang="en" >
-      <head/>
-      <body className={montserrat.className}>
+      <section className='movie-page'>
         {children}
-      </body>
-    </html>
+      </section>
   )
 }
