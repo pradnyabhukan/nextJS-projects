@@ -59,9 +59,48 @@ body {
   display: flex;
   flex-direction: column;
   bottom: 0;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .overflow-content{
   background-color: black;
+}
+/* Define your genre-button styles here */
+.genre-button {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 2px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+[data-genre-id="28"] {
+  background-color: #e74c3c; /* Action */
+}
+
+[data-genre-id="80"] {
+  background-color: #3498db; /* Drama */
+}
+
+[data-genre-id="53"] {
+  background-color: #2ecc71; /* Comedy */
+}
+/* Define more styles for other genre IDs */
+
+/* rating */
+.starRating {
+  display: inline-block;
+}
+
+.starFilled {
+  color: gold; /* Change this to your desired color */
+}
+
+.starEmpty {
+  color: gray; /* Change this to your desired color */
 }
