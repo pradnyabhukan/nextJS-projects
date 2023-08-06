@@ -8,7 +8,7 @@ export default function Movie({ title, id, poster_path, release_date }) {
     <div className="">
       
       {/* <h6>{release_date}</h6> */}
-      <Link href={`/${id}`}>
+      <Link href={{ pathname : `/${id}`,  query: { name: 'test' }}} >
         <Image
           src={imgPath + poster_path}
           alt={title}

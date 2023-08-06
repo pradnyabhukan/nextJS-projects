@@ -59,20 +59,22 @@ body {
   display: flex;
   flex-direction: column;
   bottom: 0;
+  border-radius: 15px;
   /* align-items: center; */
 }
 
 .overflow-content{
   background-color: black;
 }
+
 /* Define your genre-button styles here */
 .genre-button {
   display: inline-block;
   padding: 5px 10px;
   margin: 2px;
-  border: none;
+  /* border:2px solid whitesmoke; */
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -83,14 +85,61 @@ body {
   background-color: #e74c3c; /* Action */
 }
 
-[data-genre-id="80"] {
+[data-genre-id="12"] {
   background-color: #3498db; /* Drama */
 }
 
-[data-genre-id="53"] {
-  background-color: #2ecc71; /* Comedy */
+[data-genre-id="878"] {
+  background-color: #0b4825; /* Fiction */
 }
-/* Define more styles for other genre IDs */
+
+[data-genre-id="53"] {
+  background-color: #002347; /* Thriller */
+}
+
+[data-genre-id="35"] {
+  background-color: rgb(230, 126, 34); /* Comedy */
+}
+
+[data-genre-id="14"] {
+  background-color: #59365c; /* Fantasy */
+}
+
+[data-genre-id="10751"] {
+  background-color: #004B57; /* Family */
+}
+
+[data-genre-id="10749"] {
+  background-color: rgb(181, 126, 220); /* Romance */
+}
+
+[data-genre-id="16"] {
+  background-color: rgb(0, 204, 102); /* Animation */
+}
+
+[data-genre-id="27"] {
+  background-color:  rgb(111, 52, 52); /* Horror */
+}
+
+[data-genre-id="80"] {
+  background-color:  rgb(128, 128, 128); /* Horror */
+}
+
+[data-genre-id="18"] {
+  background-color:  rgb(128, 94, 162); /* drama */
+}
+
+[data-genre-id="10752"] {
+  background-color:  rgb(107, 87, 56); /* war */
+}
+
+[data-genre-id="36"] {
+  background-color:  rgb(73, 42, 11); /* History */
+}
+
+[data-genre-id="9648"] {
+  background-color:  rgb(39, 174, 96); /* mystry */
+}
 
 /* rating */
 .starRating {
