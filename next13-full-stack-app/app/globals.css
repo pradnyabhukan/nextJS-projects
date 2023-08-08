@@ -196,3 +196,8 @@ body {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+/* navbar */
+.navbar{
+  z-index: 1;
+}
