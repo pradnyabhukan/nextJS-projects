@@ -20,6 +20,7 @@ export default function Home() {
       `https://api.themoviedb.org/3/genre/movie/list?api_key=${process.env.NEXT_PUBLIC_API_KEY}`
     );
     setRes(await data.json());
+    setHeading("Most Popular Movies");
     setGenres(await genreList.json());
   };
   useEffect(() => {
@@ -75,7 +76,7 @@ export default function Home() {
             <h4 className="col-md-2" onClick={getData} style={{cursor:"pointer"}}>
               PMDB
             </h4>
-            <div className="col-md-8">
+            <div className="col-md-8 d-flex justify-content-center align-items-center">
               <input
                 className="my-4 pb-1 px-4"
                 type="text"
@@ -83,7 +84,7 @@ export default function Home() {
                 id="searchQuery"
                 placeholder="Search a movie"
                 style={{
-                  width: "80%",
+                  width: "60%",
                   height: "30px",
                   borderRadius: "20px 0 0 20px",
                   border: "none",
